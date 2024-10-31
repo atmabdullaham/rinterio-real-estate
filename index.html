@@ -29,17 +29,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <!-- Adding Manrope as a Custom font -->
-    <style>
-      /* Custom Font Class */
-      .font-manrope {
-        font-family: "Manrope", sans-serif;
-      }
-      /* Google Icon Class */
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-      }
-    </style>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css" />
 
     <script>
       tailwind.config = {
@@ -657,6 +648,109 @@
                   </a>
                 </span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Discuss Section -->
+      <section id="discuss-section" class="mb-24">
+        <div class="w-11/12 md:w-9/12 mx-auto mt-28">
+          <!-- Text Content -->
+          <div
+            class="mb-6 text-center flex flex-col justify-center items-center"
+          >
+            <span>
+              <a class="btn bg-white rounded-3xl">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+                <span class="text-xl font-extrabold">Rinterio News</span>
+              </a>
+            </span>
+
+            <h2 class="font-extrabold text-4xl mb-6 text-black">
+              Read Our Articles and News
+            </h2>
+            <p class="md:w-2/3">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <!-- Input Content -->
+          <div
+            class="space-y-4 lg:space-y-0 lg:grid lg:grid-cols-2 items-center justify-center w-full md:w-10/12 mx-auto gap-4"
+          >
+            <!-- First Name -->
+            <div class="">
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="input input-bordered rounded-3xl w-full min-w-xs h-16"
+                required
+              />
+            </div>
+            <!-- Last Name -->
+            <div class="">
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="input input-bordered rounded-3xl w-full min-w-xs h-16"
+              />
+            </div>
+            <!-- Phone Number -->
+            <div class="">
+              <input
+                type="text"
+                placeholder="Phone Number*"
+                class="input input-bordered rounded-3xl w-full min-w-xs h-16"
+              />
+            </div>
+            <!-- Email -->
+            <div class="">
+              <input
+                type="text"
+                placeholder="Email*"
+                class="input input-bordered rounded-3xl w-full min-w-xs h-16"
+              />
+            </div>
+            <!-- Text Area or Message -->
+            <div class="md:col-span-2">
+              <textarea
+                class="textarea textarea-bordered rounded-3xl w-full min-w-xs resize-none h-48"
+                placeholder="Write your message here"
+              ></textarea>
+            </div>
+            <div class="flex flex-col md:col-span-2">
+              <a class="btn bg-custom-green rounded-3xl"
+                ><span class="text-xl font-extrabold">Send Email</span>
+                <span class="bg-black rounded-full p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="white"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg> </span
+              ></a>
             </div>
           </div>
         </div>
