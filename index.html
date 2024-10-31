@@ -48,10 +48,10 @@
   </head>
   <body class="font-manrope">
     <!-- Header Section -->
-    <header class="w-11/12 md:w-9/12 mx-auto mb-24">
+    <header class="mb-10 md:mb-24 bg-gradient-to-b from-gray-100 to-white">
       <!-- Navbar -->
-      <nav class="">
-        <div class="navbar bg-base-100 flex justify-center items-center pt-5">
+      <nav class="w-11/12 md:w-9/12 mx-auto">
+        <div class="navbar flex justify-center items-center pt-5">
           <!-- Navbar Start -->
           <div
             class="navbar-start flex flex-row-reverse w-full md:w-auto justify-between"
@@ -87,7 +87,7 @@
             </div>
             <!-- Name -->
             <a class="btn btn-ghost">
-              <span class="bg-custom-green rounded-full p-2">
+              <span class="bg-custom-green rounded-full p-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -129,12 +129,18 @@
           <!-- Navbar End -->
           <div class="navbar-end hidden lg:flex gap-4 w-auto">
             <a href="#"
-              ><i class="fa-solid fa-magnifying-glass bg-white"></i
+              ><i
+                class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full"
+              ></i
             ></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping bg-white"></i></a>
+            <a href="#"
+              ><i
+                class="fa-solid fa-cart-shopping bg-white p-2 rounded-full"
+              ></i
+            ></a>
             <a class="btn bg-custom-green rounded-3xl"
               ><span class="text-xl font-extrabold">Book Consult</span>
-              <span class="bg-black text-white rounded-full p-2">
+              <span class="bg-black text-white rounded-full p-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -156,15 +162,15 @@
       <!-- Banner Section -->
       <section class="flex flex-col justify-center items-center">
         <!-- Img Content -->
-        <div class="mb-6 flex flex-col justify-center items-center">
+        <div class="mb-4 md:mb-6 flex flex-col justify-center items-center">
           <img src="./assets/banner.png" alt="" />
         </div>
         <!-- Text Content -->
         <div class="flex flex-col w-11/12 text-center items-center">
-          <h1 class="text-6xl font-extrabold mb-6">
+          <h1 class="text-3xl md:text-6xl font-extrabold mb-4 md:mb-6">
             A barn house of this design has a striking appearance
           </h1>
-          <p class="w-5/6 font-medium text-base mb-8">
+          <p class="w-5/6 font-medium text-base mb-6 md:mb-8">
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents, and
             large windows that flood the space with natural light.
@@ -172,7 +178,7 @@
           <span
             ><a class="btn bg-custom-green2 rounded-3xl"
               ><span class="text-xl font-extrabold">Book Consult</span>
-              <span class="bg-custom-green rounded-full p-2">
+              <span class="bg-custom-green rounded-full p-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -196,7 +202,7 @@
       <!-- About Us Section -->
       <section class="bg-custom-bg1">
         <div
-          class="w-11/12 md:w-9/12 mx-auto flex flex-col md:flex-row justify-between gap-9 py-24 relative"
+          class="w-11/12 md:w-9/12 mx-auto flex flex-col md:flex-row justify-between gap-9 py-10 md:py-24 relative"
         >
           <div
             class="hidden md:block absolute top-8 -left-10 border-2 border-dashed py-4"
@@ -204,17 +210,20 @@
             <img src="./assets/Vector.png" alt="" />
           </div>
           <!-- Text Content -->
-          <div class="md:w-1/2 border border-red-400">
-            <div>
+          <div
+            class="md:w-1/2 flex flex-col items-center md:items-start justify-between gap-6 lg:gap-0"
+          >
+            <!-- Button -->
+            <div class="">
               <span>
-                <a class="btn bg-white rounded-3xl">
+                <a class="btn bg-white rounded-3xl opacity-80">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="size-5"
+                    class="size-6"
                   >
                     <path
                       stroke-linecap="round"
@@ -222,42 +231,53 @@
                       d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                     />
                   </svg>
-                  <span class="text-xl font-extrabold">About Us</span>
+                  <span class="text-xl font-bold opacity-80">About Us</span>
                 </a>
               </span>
             </div>
-            <div class="mb-6">
-              <h2 class="font-extrabold text-4xl mb-6 text-black">
+            <!-- Heading and Para -->
+            <div class="text-center md:text-start">
+              <h2
+                class="font-bold md:font-extrabold text-3xl md:text-4xl mb-6 text-black"
+              >
                 We design thoughtful,<br />
                 liveable spaces
               </h2>
-              <p class="">
+              <p class="opacity-90">
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal
                 accents.
               </p>
             </div>
-            <!-- Commercial -->
-            <div class="mb-6 flex bg-white p-6 gap-4 rounded-lg">
+            <!-- Commercial Card-->
+            <div class="flex bg-white p-6 gap-4 rounded-lg">
               <!-- img -->
-              <div><img src="./assets/commercial.png" alt="" /></div>
+              <div class="w-1/6 flex justify-start items-center">
+                <img src="./assets/commercial.png" alt="" />
+              </div>
               <!-- Text -->
-              <div>
-                <h4 class="text-xl font-extrabold mb-3">Residential</h4>
-                <p>
+              <div class="w-4/6">
+                <h4 class="text-xl font-extrabold mb-3 opacity-95">
+                  Residential
+                </h4>
+                <p class="opacity-80">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
               </div>
             </div>
-            <!-- Residential -->
-            <div class="mb-5 flex bg-white p-6 gap-4 rounded-lg">
+            <!-- Residential Card-->
+            <div class="flex bg-white p-6 gap-4 rounded-lg">
               <!-- img -->
-              <div><img src="./assets/residential.png" alt="" /></div>
+              <div class="w-1/6 flex justify-start items-center">
+                <img src="./assets/residential.png" alt="" />
+              </div>
               <!-- Text -->
-              <div>
-                <h4 class="text-xl font-extrabold mb-3">Commercial</h4>
-                <p>
+              <div class="w-4/6">
+                <h4 class="text-xl font-extrabold mb-3 opacity-95">
+                  Commercial
+                </h4>
+                <p class="opacity-80">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -265,7 +285,7 @@
             </div>
           </div>
           <!-- Img Content -->
-          <div class="md:w-1/2 flex justify-end border border-red-400">
+          <div class="md:w-1/2 flex justify-end">
             <img src="./assets/Rectangle.png" alt="" />
           </div>
         </div>
@@ -524,7 +544,7 @@
             </p>
           </div>
           <!-- Article and News Card Content -->
-          <div class="grid grid-cols-1 lg:grid-cols-3">
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
             <!-- News Card 1 -->
             <div class="bg-white p-6 rounded-lg">
               <!-- img -->
@@ -549,7 +569,7 @@
                     class="bg-white rounded-3xl flex justify-start items-center gap-2"
                   >
                     <span class="text-xl font-extrabold">Read More</span>
-                    <span class="bg-custom-green rounded-full p-2">
+                    <span class="bg-custom-green rounded-full p-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -593,7 +613,7 @@
                     class="bg-white rounded-3xl flex justify-start items-center gap-2"
                   >
                     <span class="text-xl font-extrabold">Read More</span>
-                    <span class="bg-custom-green rounded-full p-2">
+                    <span class="bg-custom-green rounded-full p-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -637,7 +657,7 @@
                     class="bg-white rounded-3xl flex justify-start items-center gap-2"
                   >
                     <span class="text-xl font-extrabold">Read More</span>
-                    <span class="bg-custom-green rounded-full p-2">
+                    <span class="bg-custom-green rounded-full p-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -743,7 +763,7 @@
             <div class="flex flex-col md:col-span-2">
               <a class="btn bg-custom-green rounded-3xl"
                 ><span class="text-xl font-extrabold">Send Email</span>
-                <span class="bg-black rounded-full p-2">
+                <span class="bg-black rounded-full p-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -845,14 +865,5 @@
         </div>
       </div>
     </footer>
-    <section>
-      <img src="./assets/budget-planning.png" alt="" />
-      <img src="./assets/commercial.png" alt="" />
-      <img src="./assets/flow-chart.png" alt="" />
-      <img src="./assets/Vector.png" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
-    </section>
   </body>
 </html>
